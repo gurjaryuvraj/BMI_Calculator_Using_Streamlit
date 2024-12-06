@@ -31,12 +31,12 @@ except:
 if(st.button("Calculate BMI")):
     # giving error that weight is non-positive
     if(Weight<=0):
-    st.info("Enter valid Weight")
+        st.info("Enter valid Weight")
 
 
     # giving error that height is non-positive
-if(Height<=0):
-    st.info("Enter valid Height")
+    if(Height<=0):
+        st.info("Enter valid Height")
 
 
 
