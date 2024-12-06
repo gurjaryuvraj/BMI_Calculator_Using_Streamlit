@@ -10,16 +10,13 @@ if(st.button("About")):
 # taking weight in kilogram
 Weight = st.number_input("Enter weight in kg")
 
-# giving error that weight is non-positive
-if(Weight<=0):
-    st.info("Enter valid Weight")
+
+
 
 # taking height in meters
 Height = st.number_input("Enter your height in meters")
 
-# giving error that height is non-positive
-if(Height<=0):
-    st.info("Enter valid Height")
+
 
 
 # calculating BMI using BMI = weight/height^2
@@ -32,6 +29,18 @@ except:
 
 # check if the Calculate BMI button is pressed
 if(st.button("Calculate BMI")):
+    # giving error that weight is non-positive
+    if(Weight<=0):
+    st.info("Enter valid Weight")
+
+
+    # giving error that height is non-positive
+if(Height<=0):
+    st.info("Enter valid Height")
+
+
+
+
     # printing BMI value
     st.text("Your BMI is {}.".format(BMI))
 
